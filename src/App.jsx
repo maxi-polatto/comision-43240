@@ -1,17 +1,16 @@
+import Navbar from "./components/layout/navbar/Navbar";
+import ProductDetailContainer from "./components/pages/productDetail/ProductDetailContainer";
+import ProductsListContainer from "./components/pages/productsList/ProductsListContainer";
 
-function App() {
-  const saludar = () => {
-    console.log("Hola como estas? bienvendio");
-  };
-
+const App = () => {
   return (
-    <button
-      onClick={saludar}
-      style={{ backgroundColor: "red", padding: "10px 20px" }}
-    >
-      saludar
-    </button>
+    <div>
+      <Navbar />
+
+      <ProductsListContainer />
+      {/* <ProductDetailContainer /> */}
+    </div>
   );
-}
+};
 
 export default App;
